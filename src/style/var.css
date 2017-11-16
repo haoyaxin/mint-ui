@@ -1,10 +1,11 @@
-$color-blue: #26a2ff;
+$color-blue: #1acdcf;
+$color-primary: #f26c79;
 $color-white: #fff;
 $color-grey: #d9d9d9;
 $border-color: #c8c8cd;
-$success-color: #4caf50;
-$error-color: #f44336;
-$warning-color: #ffc107;
+$success-color: #0acd4a;
+$error-color: #f26c79;
+$warning-color: #f7d017;
 
 /* Cell Component */
 $cell-value-color: #888;
@@ -13,8 +14,8 @@ $cell-value-color: #888;
 $header-height: 40px;
 
 /* Button Component */
-$button-default-color: #656b79;
-$button-default-background-color: #f6f8fa;
+$button-default-color: #fff;
+$button-default-background-color: #f26c79;
 $button-default-plain-color: #5a5a5a;
 $button-default-box-shadow: 0 0 1px #b8bbbf;
 $button-primary-color: #fff;

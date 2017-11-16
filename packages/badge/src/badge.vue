@@ -13,6 +13,7 @@
  * @module components/badge
  * @desc 徽章
  * @param {string} [type=primary] 组件样式，可选 primary, error, success, warning
+ * @param {string} [styles=bg] 组件样式，可选 bg, outline
  * @param {string} [color] - 传入颜色值
  * @param {string} [size=normal] - 尺寸，接受 normal, small, large
  *
@@ -29,6 +30,10 @@ export default {
       type: String,
       default: 'primary'
     },
+    styles: {
+      type: String,
+      default: 'bg'
+    },
     size: {
       type: String,
       default: 'normal'
@@ -41,25 +46,26 @@ export default {
 
   @component-namespace mint {
     @component badge {
-      color: $color-white;
+      color: $cell-value-color;
       text-align: center;
       display: inline-block;
 
       @when success {
-        background-color: $success-color;
+        border: 1px solid $success-color;
       }
 
       @when primary {
-        background-color: $color-blue;
+        border: 1px solid $color-blue;
       }
 
       @when error {
-        background-color: $error-color;
+        border: 1px solid $error-color;
       }
 
       @when warning {
-        background-color: $warning-color;
+        border: 1px solid $warning-color;
       }
+      
 
       @when size-normal {
         border-radius: 12px;
